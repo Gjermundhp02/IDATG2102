@@ -4,7 +4,7 @@
  *   For programmets funksjonalitet se:  Oblig2.pdf
  *
  *   @file    OBLIG2.CPP
- *   @author  Frode Haug, NTNU
+ *   @author  Gjermund H Pedersen
  */
 
 
