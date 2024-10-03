@@ -67,16 +67,15 @@ int main() {
  *  @return   Peker til rota i treet som er bygd
  */
 Node* byggTre() {                                //  Bygger treet:          //
-   Node* p[7];                                   //           3             //
-   const int nums[] = {3, 0, 2, 6, 8, 4, 5};     //       /       \         //
-   for(int i = 0; i < 7; i++){                   //      0         6        //
-      p[i] = new Node(nums[i]);                  //    /   \        \       //
-   }                                             //   2     4        5      //
-   p[0]->left = p[1];    p[0]->right = p[5];     //        /          \     //
-   p[1]->left = p[2];    p[1]->right = p[3];     //       8            5    //
-                         p[3]->right = p[4];
-   p[5]->left = p[6];
-   return p[0];
+    Node* p[12];                                 //           1             //
+    for (int i = 1; i <= 11; i++)                //       /       \         //
+        p[i] = new Node(i);                      //      2         3        //
+    p[1]->left = p[2];    p[1]->right = p[3];    //    /   \     /   \      //
+    p[2]->left = p[4];    p[2]->right = p[5];    //   4     5   6     7     //
+    p[3]->left = p[6];    p[3]->right = p[7];    //        /     \   /      //
+    p[5]->left = p[8];    p[6]->right = p[9];    //       8       9 10      //
+    p[7]->left = p[10];   p[9]->left = p[11];    //              /          //
+    return p[1];                                 //             11          //
 }
 
 
