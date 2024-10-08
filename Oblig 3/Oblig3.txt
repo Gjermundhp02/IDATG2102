@@ -1,0 +1,123 @@
+1.
+H: 4 I: 5  S>G GTROSANOFF
+H: 4 I: 6  T>A GAROSTNOFF
+H: 4 I: 7  R>N GANOSTROFF
+H: 4 I: 8  (O>O) GANOSTROFF
+H: 4 I: 9  S>F, G>F FANOGTROSF
+H: 4 I: 10 T>F, (A>F) FANOGFROST
+H: 1 I: 2  A>F AFNOGFROST
+H: 1 I: 3  (F>N) AFNOGFROST
+H: 1 I: 4  (N>O) AFNOGFROST
+H: 1 I: 5  O>G, N>G, (F>G) AFGNOFROST
+H: 1 I: 6  O>F, N>F, G>F, (F>F) AFFGNOROST
+H: 1 I: 7  (O>R) AFFGNOROST
+H: 1 I: 8  R>O, (O>O) AFFFGNOORST
+H: 1 I: 9  (R>S) AFFFGNOORST
+H: 1 I: 10 (T>S) AFFFGNOORST
+
+2.
+FRIMERKENE ERIMERKFNE EEIMRRKFNE EEE IMRRKFN
+
+EEE
+IMRRKFN IFRRKMN IFKRRMN IFKN RRM
+
+EE E
+IF KN
+RRM M RR
+
+E E E
+I F
+K N
+M R R
+
+EEEIFKNMRR
+
+3.
+SILLEDILLEN
+SILLNDILLEE
+SILLNDILLEE
+SIILNDLLLEE 
+SIILNDLLLEE
+SIILNDLLLEE
+
+INILEDLLLES
+INLLEDELLIS
+NLLLEDELIIS
+LLLLEDENIIS
+LLLEEDLNIIS
+LELDELLNIIS
+LEEDLLLNIIS
+EDELLLLNIIS
+EDELLLLNIIS
+DEELLLLNIIS
+
+Arrayen FØR sortering:
+    STROGANOFF
+FUCK
+GTROSANOFF h=4 i=5 verdi=G
+GAROSTNOFF h=4 i=6 verdi=A
+GANOSTROFF h=4 i=7 verdi=N
+GANOSTROFF h=4 i=8 verdi=O
+FANOGTROSF h=4 i=9 verdi=F
+FANOGFROST h=4 i=10 verdi=F
+AFNOGFROST h=1 i=2 verdi=A
+AFNOGFROST h=1 i=3 verdi=N
+AFNOGFROST h=1 i=4 verdi=O
+AFGNOFROST h=1 i=5 verdi=G
+AFFGNOROST h=1 i=6 verdi=F
+AFFGNOROST h=1 i=7 verdi=R
+AFFGNOORST h=1 i=8 verdi=O
+AFFGNOORST h=1 i=9 verdi=S
+AFFGNOORST h=1 i=10 verdi=T
+
+
+Arrayen ETTER SHELLSORT sortering:
+    AFFGNOORST
+
+Arrayen FØR sortering:
+    FRIMERKENE
+
+  1    2    3    4    5    6    7    8    9    10 
+
+i=E    E   [E]   M    R    R    K    F    N  j=I   | venstre=1 hoyre=10 partisjon=3
+i=E  j=E    E    M    R    R    K    F    N    I   | venstre=1 hoyre=2 partisjon=1
+  E    E    E  i=F   [I]   R    K    M    N  j=R   | venstre=4 hoyre=10 partisjon=5
+  E    E    E    F    I  i=N    K    M   [R] j=R   | venstre=6 hoyre=10 partisjon=9
+  E    E    E    F    I  i=K   [M] j=N    R    R   | venstre=6 hoyre=8 partisjon=7
+
+
+Arrayen ETTER QUICKSORT sortering:
+    EEEFIKMNRR
+
+Arrayen FØR sortering: SILLEDILLEN
+
+downHeap 1: SILLNDILLEE
+downHeap 2: SILLNDILLEE
+downHeap 3: SILLNDILLEE
+downHeap 4: SNLLIDILLEE
+downHeap 5: SNLLIDILLEE
+
+1 (n=11):
+    downHeap: NLLLIDIELES
+2 (n=10):
+    downHeap: LLLLIDIEENS
+3 (n=9):
+    downHeap: LLLEIDIELNS
+4 (n=8):
+    downHeap: LILEEDILLNS
+5 (n=7):
+    downHeap: LIIEEDLLLNS
+6 (n=6):
+    downHeap: IEIDELLLLNS
+7 (n=5):
+    downHeap: IEEDILLLLNS
+8 (n=4):
+    downHeap: EDEIILLLLNS
+9 (n=3):
+    downHeap: EDEIILLLLNS
+10 (n=2):
+    downHeap: DEEIILLLLNS
+
+
+Arrayen ETTER HEAPSORT sortering:
+DEEIILLLLNS
